@@ -1,4 +1,4 @@
-exports.MyArray = class MyArray {
+class MyArray {
   constructor() {
     this.array = [];
   }

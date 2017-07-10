@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <title>MyArray tests</title>
+    <link rel="stylesheet" media="all" href="../node_modules/mocha/mocha.css">
 </head>
 <body>
-$END$
+<div id="mocha"><p>Index</p></div>
+<div id="messages"></div>
+<div id="fixtures"></div>
+<script src="../node_modules/mocha/mocha.js"></script>
+<script src="../node_modules/chai/chai.js"></script>
+<script src="../src/array.es6.js"></script>
+<script>mocha.setup('bdd')</script>
+<script src="array.test.js"></script>
+<script>mocha.run();</script>
 </body>
 </html>

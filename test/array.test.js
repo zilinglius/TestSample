@@ -2,10 +2,9 @@
  * Created by zilinglius on 10/07/2017.
  */
 
-var js = require('../src/array.es6.js');
-var data = new js.MyArray();
+var data = new MyArray();
 
-var expect = require('chai').expect;
+var expect = chai.expect;
 
 describe('MyArray', function () {
 
