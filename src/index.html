@@ -1,0 +1,35 @@
+<html>
+<script src="array.es6.js"></script>
+<script type="text/javascript">
+    var data = new MyArray();
+
+    function btnInsert_OnClick() {
+
+      var item = document.getElementById("txtInput").value;
+
+      data.add(item);
+
+      document.getElementById("spnContents").innerHTML = data.toString();
+    }
+
+    function btnDelete_OnClick() {
+
+      var item = document.getElementById("txtInput").value;
+
+      data.remove(item);
+
+      document.getElementById("spnContents").innerHTML = data.toString();
+    }
+
+</script>
+<body>
+    <div>
+        <input type="text" id="txtInput">
+        <input type="button" id="btnInsert" value="Insert" onclick="btnInsert_OnClick()">
+        <input type="button" id="btnDelete" value="Delete" onclick="btnDelete_OnClick()">
+    </div>
+    <div>
+        <p>Contents of Array: <span id="spnContents" style="color: fuchsia"></span></p>
+    </div>
+</body>
+</html>
